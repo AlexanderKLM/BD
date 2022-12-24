@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name ="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum scale=1.0">
+    <title>Каталог товаров</title>
+    <link rel="stylesheet" href="{% static 'main/css/cart.css'%}"/>
+</head>
+<body>
+<div class="container2">
+        <a href="http://127.0.0.1:8000/ordersystem/"><button4 class="bm">MUSIC SHOP</button4></a>
+    </div>
+<div>
+    <a href="http://127.0.0.1:8000/ordersystem/"><button class="buttonR" >Назад в каталог</button></a>
+</div>
+<div class="container3">
+ <center>
+     <h1 class="TEXT">Каталог товаров</h1>
+     <table border="1">
+         <tr>
+             <th>Номер заказа</th>
+             <th>Клиент</th>
+             <th>Дата создания заказа</th>
+             <th>Статус</th>
+             <th>Стоимость</th>
+         </tr>
+         {% for records in dataep1%}
+         <tr>
+             <td>{{reso.check_id}}</td>
+             <td>{{reso.user_id}}</td>
+             <td>{{reso.odate}}</td>
+             <td>{{reso.ostatus}}</td>
+             <td>{{reso.total_cost}}</td>
+             <td><button  onclick="show()">Add</button></td>
+
+         </tr>
+         {% endfor %}
+     </table>
+ </center>
+</div>
+</body>
+</html>

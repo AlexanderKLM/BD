@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name ="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum scale=1.0">
+    <title>Каталог товаров</title>
+    <link rel="stylesheet" href="{% static '/css/ordsys.css'%}"/>
+</head>
+<body>
+<div1 class="container2">
+        <a href="http://127.0.0.1:8000/orderad/"><button4 class="bm">MUSIC SHOP</button4></a>
+    </div1>
+<div2> <a href="http://127.0.0.1:8000/orderad/"><button class="buttonR" >Доставка</button></a></div2>
+<div3>
+    <a href="http://127.0.0.1:8000/cartad/"><button class="buttonL" >В корзину</button></a>
+</div3>
+<div4>
+    <input type="text" style="height: 66px;width: 991px;">
+    <button class="buttonL" >Добавить в таблицу</button></a>
+</div4>
+<div4 class="container3">
+ <center>
+     <h1 class="TEXT">Каталог товаров</h1>
+     <table border="1">
+         <tr>
+             <th>Номер</th>
+             <th>Название</th>
+             <th>Категория</th>
+             <th>Статус</th>
+         </tr>
+         {% for res in data%}
+         <tr>
+             <td>{{res.catalog_id}}</td>
+             <td>{{res.cname}}</td>
+             <td>{{res.category}}</td>
+             <td>{{res.cstatus}}</td>
+             <td><button  onclick="show()">Add</button></td>
+         </tr>
+         {% endfor %}
+     </table>
+
+ </center>
+</div4>
+</body>
+</html>

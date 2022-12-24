@@ -1,0 +1,145 @@
+body {
+    background: #362C73;
+}
+
+.container1 {
+    margin: 0;
+    padding: 0;
+}
+
+.imgbox {
+    display: grid;
+    height: 100%;
+}
+
+.center-fit {
+    max-width: 100%;
+    max-height: 100vh;
+    margin: auto;
+}
+
+.floatRight {
+
+    position: absolute;
+    width: 809px;
+    height: 1080px;
+    left: 1111px;
+    top: 0px;
+}
+
+.container2 {
+    position: absolute;
+    width: 1920px;
+    height: 135px;
+    left: 0px;
+    top: 0px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.container3 {
+     float: left;
+    position: relative;
+    left: 700px;
+    top: 230px;
+}
+
+.buttonR {
+    position: absolute;
+    width: 330px;
+    height: 115px;
+    left: 1400px;
+    top: 800px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.07em;
+    color: #000000;
+    opacity: 0.5;
+    border: 1px solid #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+.bm{
+    position: absolute;
+    width: 500px;
+    height: 66px;
+    left: 710px;
+    top: 41px;
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.07em;
+    color: lightslategrey;
+}
+
+.buttonR:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
+.buttonL {
+    position: absolute;
+    width: 330px;
+    height: 115px;
+    left: 1400px;
+    top: 600px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.07em;
+    color: #000000;
+    opacity: 0.5;
+    border: 1px solid #000000;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.buttonL:hover {
+    opacity: .8;
+    cursor: pointer;
+}
+
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+  padding: 8px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:hover {background-color: coral;}
+tr
+{
+  background-color:white;
+}
+
+.TEXT{
+     font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 42px;
+    text-align: center;
+    letter-spacing: 0.07em;
+    color: whitesmoke;
+}
